@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension",
+  "version": "1.0",
+  "description": "This is a Chrome Extension for Password Generating. You can click on the button 'Password Generate' and got the secure Password.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["script.js"]
+    }
+  ]
+}
